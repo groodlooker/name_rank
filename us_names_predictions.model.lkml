@@ -8,6 +8,7 @@ datagroup: names_pred_group {
   max_cache_age: "1 hour"
 }
 
-persist_with: us_names_predictions_default_datagroup
+persist_with: names_pred_group
 
 explore: names {}
+# changes to save

@@ -1,5 +1,6 @@
 view: name_rank {
     derived_table: {
+      indexes: ["name","state","year"]
       datagroup_trigger: names_pred_group
       explore_source: names {
         column: number {}
@@ -31,6 +32,7 @@ view: name_rank {
 
 view: rank_py {
   derived_table: {
+    indexes: ["name","state","year"]
     datagroup_trigger: names_pred_group
     explore_source: name_rank {
       column: name {}
@@ -146,4 +148,3 @@ explore: rank_py {}
 # }
 #
 # explore: rolling_ranks {}
-
